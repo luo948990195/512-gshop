@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
-    <footerGuide/>
+    <footerGuide v-show="$route.meta.showFooter"/>
   </div>
 </template>
 
@@ -11,7 +11,7 @@ export default {
   name: 'App',
   components: {
     footerGuide
-  }
+  },
 }
 </script>
 
